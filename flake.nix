@@ -1,5 +1,5 @@
 {
-  description = "Mekko development environment";
+  description = "🍹 Juice - Brazilian NFC-e Invoice Extraction Library";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -27,12 +27,13 @@
         default = pkgs.mkShell {
           buildInputs = with pkgs; [
             go
+            golangci-lint
             treefmt
             nixfmt-rfc-style
           ];
 
           shellHook = ''
-            echo "Development environment is ready!"
+            echo "A juicy environment is ready!"
           '';
         };
       });
